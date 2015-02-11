@@ -3,10 +3,11 @@ body { background-color: gray;
 }
 
 h1 {
-  width: 500px;
+  width: 300px;
   font-size: 250%;
   border-style: solid;
   border-color: black;
+  box-shadow: 12px 11px 10px;
 }
 
 .field {
