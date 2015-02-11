@@ -16,7 +16,7 @@
 
 <p>
   <strong>Vote:</strong>
-  <%= @picture.vote %>
+  <%= @picture.picture_votes.sum :direction %>
 </p>
 
 <p>
@@ -43,7 +43,8 @@
   </tbody>
 
 <br>
-
+<%= link_to 'Upvote', picture_upvote_path(@picture), method: :post %> 
+<%= link_to 'Downvote', picture_downvote_path(@picture), method: :post %> 
 <%= link_to 'Comment', new_picture_comment_path(@picture) %>
 <%= link_to 'Edit', edit_picture_path(@picture) %> |
 <%= link_to 'Back', pictures_path %>

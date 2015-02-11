@@ -61,6 +61,19 @@ class PicturesController < ApplicationController
     end
   end
 
+# Voting System Defs
+def upvote
+  @picture = Picture.find(params[:picture_id])
+  PictureVote.create(picture: @picture, direction: +1)
+  redirect_to @picture
+end
+
+def downvote
+  @picture = Picture.find(params[:picture_id])
+  PictureVote.create(picture: @picture, direction: -1)
+  redirect_to @picture
+end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_picture

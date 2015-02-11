@@ -5,6 +5,9 @@ Rails.application.routes.draw do
 
   resources :pictures do
     resources :comments
+    resources :picture_votes
+    post :upvote
+    post :downvote
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
