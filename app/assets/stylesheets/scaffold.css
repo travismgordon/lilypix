@@ -1,5 +1,5 @@
-body { background-color: gray;
-  text-shadow: 1px 1px 1px;
+body { background-color:;
+  text-shadow: 2px;
 }
 
 h1 {
@@ -8,6 +8,7 @@ h1 {
   border-style: solid;
   border-color: black;
   box-shadow: 12px 11px 10px;
+  margin: 20px auto;
 }
 
 .field {
@@ -16,3 +17,6 @@ h1 {
   font-size: 15px;
   margin-top: 5px;
 }
+
+
+
