@@ -15,6 +15,9 @@ class CommentsController < ApplicationController
   # GET /comments/new
   def new
     @comment = Comment.new
+    if params[:picture_id]
+      @comment.picture_id = params[:picture_id]
+    end
   end
 
   # GET /comments/1/edit

@@ -19,9 +19,10 @@
       <tr>
         <td><%= picture.title %></td>
         <td><%= picture.caption %></td>
-        <td><%= picture.url %></td>
+        <td>​<%= image_tag picture.url %></td>
         <td><%= picture.vote %></td>
         <td><%= picture.hot %></td>
+        <td><%= link_to 'Comment', new_picture_comment_path(picture_id: picture.id) %></td>
         <td><%= link_to 'Show', picture %></td>
         <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
         <td><%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
