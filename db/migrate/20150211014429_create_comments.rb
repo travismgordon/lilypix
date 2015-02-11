@@ -4,9 +4,10 @@ class CreateComments < ActiveRecord::Migration
       t.string :name
       t.string :words
       t.integer :vote
-      t.refrences :picture
+      t.references :picture, index: true
 
       t.timestamps null: false
     end
+    add_foreign_key :comments, :pictures
   end
 end

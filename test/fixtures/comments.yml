@@ -4,10 +4,10 @@ one:
   name: MyString
   words: MyString
   vote: 1
-  picture: 
+  picture_id: 
 
 two:
   name: MyString
   words: MyString
   vote: 1
-  picture: 
+  picture_id: 
