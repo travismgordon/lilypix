@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :picture_votes
+
   resources :comments
 
   resources :pictures do

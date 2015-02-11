@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Direction:</strong>
+  <%= @picture_vote.direction %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @picture_vote.user %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @picture_vote.picture %>
+</p>
+
+<%= link_to 'Edit', edit_picture_vote_path(@picture_vote) %> |
+<%= link_to 'Back', picture_votes_path %>

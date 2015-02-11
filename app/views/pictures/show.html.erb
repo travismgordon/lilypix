@@ -24,5 +24,27 @@
   <%= @picture.hot %>
 </p>
 
+<h3>Comments</h3>
+	<!-- <p><%= @picture.comments.inspect %> </p> -->
+<tbody>
+    <% @picture.comments.each do |comment| %>
+      <tr>
+        <td><%= comment.name %>:</td>
+        <td><%= comment.words %></td>
+        <br>
+        <br>
+        <td><%= comment.vote %></td>
+        <!-- <td><%= comment.picture %></td> -->
+<!--         <td><%= link_to 'Show', comment %></td>
+        <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
+        <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+      </tr>
+    <% end %>
+  </tbody>
+
+<br>
+
+<%= link_to 'Comment', new_picture_comment_path(@picture) %>
 <%= link_to 'Edit', edit_picture_path(@picture) %> |
 <%= link_to 'Back', pictures_path %>
+

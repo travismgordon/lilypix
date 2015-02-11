@@ -1,0 +1,29 @@
+<%= form_for(@picture_vote) do |f| %>
+  <% if @picture_vote.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@picture_vote.errors.count, "error") %> prohibited this picture_vote from being saved:</h2>
+
+      <ul>
+      <% @picture_vote.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :direction %><br>
+    <%= f.number_field :direction %>
+  </div>
+  <div class="field">
+    <%= f.label :user %><br>
+    <%= f.text_field :user %>
+  </div>
+  <div class="field">
+    <%= f.label :picture_id %><br>
+    <%= f.text_field :picture_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

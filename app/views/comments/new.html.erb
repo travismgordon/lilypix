@@ -1,5 +1,7 @@
 <h1>New Comment</h1>
 
+<%= image_tag @comment.picture.url %>
+<br>	
 <%= render 'form' %>
 
-<%= link_to 'Back', comments_path %>
+<%= link_to 'Back', pictures_path %>
