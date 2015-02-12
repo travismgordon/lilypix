@@ -3,7 +3,7 @@
   They will automatically be included in application.css.
 */
 
-.center{
+.lily_logo{
     width: 300px;
     display: block;
     margin-left: auto;
@@ -83,6 +83,19 @@
     }
 
 /*styling for show on pictures*/
-.new_style{
-  color: white;
+.center_show{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+/*    margin-bottom: 100px;
+*/
+}
+.title_text{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: -25px;
+}
+
+.center_text{
+  text-align: center;
 }

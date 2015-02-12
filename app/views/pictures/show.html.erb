@@ -1,15 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<p class="title_text">
   <strong>Title:</strong>
   <%= @picture.title %>
 </p>
 
 <p>
-  ​<%= image_tag @picture.url %>
+  ​<%= image_tag @picture.url, :class => "center_show" %>
 </p>
 
-<p>
+<p class="center_text">
   <strong>Caption:</strong>
   <%= @picture.caption %>
 </p>
