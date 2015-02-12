@@ -4,7 +4,7 @@
 </div>
 
 
-<%= image_tag "logo.png", class:"pagination-centered", id:"lily_logo" %>
+<%= image_tag "logo.png", class:"center", id:"lily_logo" %>
 <!-- <img src="http://i.imgur.com/6Yj3pJ0.png"/> -->
 <h3>LilyPix Index</h3>
 
@@ -30,7 +30,7 @@
       <tr>
         <td><%= picture.title %></td>
         <td><%= picture.caption %></td>
-        <td>​<%= image_tag picture.url %></td>
+        <td>​<%= image_tag picture.url, style:"height:200px; width:auto;" %></td>
         <td><%= picture.vote %></td>
         <td><%= picture.hot %></td>
         <!-- <td><%= link_to 'Comment', new_picture_comment_path(picture_id: picture.id) %></td> -->
