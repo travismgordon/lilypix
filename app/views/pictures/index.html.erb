@@ -10,11 +10,9 @@
 
 <%= link_to "<button>Upload</button>".html_safe, new_picture_path %>
 
-<!-- <%= link_to "<button>Upload</button>".html_safe, new_picture_path, class:"upload_button" %> -->
-
-<div class="container demo-7">
-  <ul class="grid cs-style-7">
-  <% @pictures.each do |picture| %>
+  <div id="pattern" class="pattern">
+    <ul class="g">
+    <% @pictures.each do |picture| %>
 
           <li>
             <figure>
