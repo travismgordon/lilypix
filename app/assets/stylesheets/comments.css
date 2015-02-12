@@ -1,3 +1,61 @@
+<<<<<<< HEAD
 body {
 	background-color: #00A99D;
 }
+=======
+
+
+/*This css style is affecting only the comments_form.html.erb file
+in the comments folder
+/*also the .new_style class is from the new.html.erb file.*/
+
+.new_style {
+	margin-bottom: 1px;
+	margin-top: 60px;
+	margin-left: 10px;
+	margin-bottom: 8px;
+}
+
+.comment_name {
+	font-size: 23px;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+.comment_words {
+	font-size: 23px;
+	padding-top: 10px;
+}
+
+.comment_vote {
+	font-size: 23px;
+	padding-top: 10px;
+}
+
+.create_comment {
+	font-size: 10px;
+}
+
+.what {
+	padding-top: 6px;
+}
+
+
+/*The following css code is affecting
+the index.html.erb file! which is the New Comment page*/ 
+
+.plus_comment {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.add_name {
+	padding-top: 20px;
+}
+
+.pix {
+	float-right: 30px;
+}
+
+ 
+>>>>>>> 4710f38a77ae0953e326a3b999256beaff698bb3

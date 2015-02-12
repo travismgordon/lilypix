@@ -1,6 +1,19 @@
 <p id="notice"><%= notice %></p>
-
+<<<<<<< HEAD
+<div class="pix">
 <h1>Listing Pictures</h1>
+</div>
+=======
+
+
+<%= image_tag "logo.png" %>
+<!-- <img src="http://i.imgur.com/6Yj3pJ0.png"/> -->
+<h3>LilyPix Index</h3>
+
+<%= link_to "<button>Upload</button>".html_safe, new_picture_path %>
+
+<!-- <%= link_to "<button>Upload</button>".html_safe, new_picture_path, class:"upload_button" %> -->
+>>>>>>> 1b5ce57ea2c7b0f662f84cb5047784f43acae298
 
 <table>
   <thead>
@@ -15,6 +28,7 @@
   </thead>
 
   <tbody>
+    <div class="back">
     <% @pictures.each do |picture| %>
       <tr>
         <td><%= picture.title %></td>
@@ -22,15 +36,17 @@
         <td>​<%= image_tag picture.url %></td>
         <td><%= picture.vote %></td>
         <td><%= picture.hot %></td>
-        <td><%= link_to 'Comment', new_picture_comment_path(picture_id: picture.id) %></td>
-        <td><%= link_to 'Show', picture %></td>
-        <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
-        <td><%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <!-- <td><%= link_to 'Comment', new_picture_comment_path(picture_id: picture.id) %></td> -->
+        <td><%= link_to "<button>View</button>".html_safe, picture %></td>
+        <!-- <td><%= link_to 'Edit', edit_picture_path(picture) %></td> -->
+        <!-- <td><%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
       </tr>
     <% end %>
+  </div>
   </tbody>
 </table>
 
 <br>
 
-<%= link_to 'New Picture', new_picture_path %>
+<%= image_tag "sobe.png" %>
+<!-- <img src="http://i.imgur.com/dPWrScQ.png"/> -->

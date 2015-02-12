@@ -2,6 +2,13 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+<<<<<<< HEAD
 body{
 	font-size: 20px;
+=======
+
+
+.hot_image {
+	height:30px; width: auto; 
+>>>>>>> 4710f38a77ae0953e326a3b999256beaff698bb3
 }
