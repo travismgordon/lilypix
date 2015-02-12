@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
-
+<div class="pix">
 <h1>Listing Pictures</h1>
+</div>
 
 <table>
   <thead>
@@ -15,6 +16,7 @@
   </thead>
 
   <tbody>
+    <div class="back">
     <% @pictures.each do |picture| %>
       <tr>
         <td><%= picture.title %></td>
@@ -28,6 +30,7 @@
         <td><%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
+  </div>
   </tbody>
 </table>
 

@@ -1,6 +1,7 @@
 
 
-/*This css style is affecting only the comments_form.html.erb file!*/
+/*This css style is affecting only the comments_form.html.erb file
+in the comments folder
 /*also the .new_style class is from the new.html.erb file.*/
 
 .new_style {
@@ -12,7 +13,8 @@
 
 .comment_name {
 	font-size: 23px;
-	padding-top: 10px;
+	padding-top: 0px;
+	margin-top: 0px;
 }
 
 .comment_words {
@@ -26,7 +28,7 @@
 }
 
 .create_comment {
-	padding-top: 10px;
+	font-size: 10px;
 }
 
 .what {
@@ -35,8 +37,19 @@
 
 
 /*The following css code is affecting
-the index.html.erb file!*/
+the index.html.erb file! which is the New Comment page*/ 
 
 .plus_comment {
-	padding-top: 10px;
-} 
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.add_name {
+	padding-top: 20px;
+}
+
+.pix {
+	float-right: 30px;
+}
+
+ 
