@@ -3,7 +3,7 @@
   They will automatically be included in application.css.
 */
 
-.center{
+.lily_logo{
     width: 300px;
     display: block;
     margin-left: auto;
@@ -91,4 +91,25 @@
         clear: none;
       }
     }
+<<<<<<< HEAD
   }
+=======
+
+/*styling for show on pictures*/
+.center_show{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+/*    margin-bottom: 100px;
+*/
+}
+.title_text{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: -25px;
+}
+
+.center_text{
+  text-align: center;
+}
+>>>>>>> 012449efc8eee8ccf4cfa03c59135b5485a8ed19

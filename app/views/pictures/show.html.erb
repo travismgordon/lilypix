@@ -1,15 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<p class="title_text">
   <strong>Title:</strong>
   <%= @picture.title %>
 </p>
 
 <p>
-  ​<%= image_tag @picture.url %>
+  ​<%= image_tag @picture.url, :class => "center_show" %>
 </p>
 
-<p>
+<p class="center_text">
   <strong>Caption:</strong>
   <%= @picture.caption %>
 </p>
@@ -30,9 +30,10 @@
 
 <%= link_to "<button>Upvote</button>".html_safe, picture_upvote_path(@picture), method: :post %> 
 <%= link_to "<button>Downvote</button>".html_safe, picture_downvote_path(@picture), method: :post %> 
-<%= link_to "<button>New Comment</button>".html_safe, new_picture_comment_path(@picture) %>
+<!-- <%= link_to "<button>New Comment</button>".html_safe, new_picture_comment_path(@picture) %> -->
 <!-- <%= link_to 'Edit', edit_picture_path(@picture) %> -->
 <%= link_to "<button>Back to Frontpage</button>".html_safe, pictures_path %>
+<%= link_to "<button>Delete</button>".html_safe, @picture, method: :delete, data: { confirm: 'Are you sure?' } %>
 
 <h3>Comments</h3>
 	<!-- <p><%= @picture.comments.inspect %> </p> -->
@@ -45,9 +46,9 @@
         <br>
         <td><%= comment.vote %></td>
         <!-- <td><%= comment.picture %></td> -->
-<!--    <td><%= link_to 'Show', comment %></td>
-        <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
-        <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+        <!-- <td><%= link_to 'Show', comment %></td> -->
+        <!-- <td><%= link_to 'Edit', edit_comment_path(comment) %></td> -->
+        <!-- <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
       </tr>
     <% end %>
   </tbody>
