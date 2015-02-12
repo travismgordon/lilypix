@@ -143,3 +143,33 @@ main.no-touch .boxInner:hover .titleBox, main.touch .boxInner.touchFocus .titleB
     }
 
 
+/*This code is affecting the form.html.erb folder within pictures!!*/
+
+.new_field {
+  /*text-align: center;*/
+  /*margin-right: auto;*/
+  /*margin-left: auto;*/
+  display: inline-block;
+  width: auto;
+}
+
+
+.new_picture{
+  text-align: center;
+}
+
+.create_button {
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.upload {
+  text-align: center;
+}
+
+.back_button {
+  text-align: center;
+}

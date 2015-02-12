@@ -11,27 +11,27 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="new_field">
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </div>
-  <div class="field">
+  <div class="new_field">
     <%= f.label :caption %><br>
     <%= f.text_field :caption %>
   </div>
-  <div class="field">
+  <div class="new_field">
     <%= f.label :url %><br>
     <%= f.text_field :url %>
   </div>
-  <div class="field">
-    <%= f.label :vote %><br>
-    <%= f.number_field :vote %>
+  <div class="new_field">
+ <!--    <%= f.label :vote %><br> -->
+    <%= f.hidden_field :vote %>
   </div>
-  <div class="field">
-    <%= f.label :hot %><br>
-    <%= f.check_box :hot %>
+  <div class="new_field">
+<!--     <%= f.label :hot %><br> -->
+    <%= f.hidden_field :hot %>
   </div>
-  <div class="actions">
+  <div class="create_button">
     <%= f.submit %>
   </div>
 <% end %>
