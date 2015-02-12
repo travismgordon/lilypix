@@ -1,3 +1,42 @@
-.comment {
-	background-color: blue;
+
+
+/*This css style is affecting only the comments_form.html.erb file!*/
+/*also the .new_style class is from the new.html.erb file.*/
+
+.new_style {
+	margin-bottom: 1px;
+	margin-top: 60px;
+	margin-left: 10px;
+	margin-bottom: 8px;
 }
+
+.comment_name {
+	font-size: 23px;
+	padding-top: 10px;
+}
+
+.comment_words {
+	font-size: 23px;
+	padding-top: 10px;
+}
+
+.comment_vote {
+	font-size: 23px;
+	padding-top: 10px;
+}
+
+.create_comment {
+	padding-top: 10px;
+}
+
+.what {
+	padding-top: 6px;
+}
+
+
+/*The following css code is affecting
+the index.html.erb file!*/
+
+.plus_comment {
+	padding-top: 10px;
+} 

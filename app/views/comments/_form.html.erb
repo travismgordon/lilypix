@@ -11,22 +11,22 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="comment_name">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
-  <div class="field">
+  <div class="comment_words">
     <%= f.label :words %><br>
     <%= f.text_field :words %>
   </div>
-  <div class="field">
+  <div class="comment_vote">
     <%= f.label :vote %><br>
     <%= f.number_field :vote %>
   </div>
-  <div class="field">
+  <div class="what">
     <%= f.hidden_field :picture_id %>
   </div>
-  <div class="actions">
+  <div class="create_comment">
     <%= f.submit %>
   </div>
 <% end %>
