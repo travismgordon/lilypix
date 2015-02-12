@@ -15,21 +15,19 @@
     <% @pictures.each do |picture| %>
 
           <li>
-            <figure>
-              <%= image_tag picture.url, style:"height:200px; width:auto;" %>
-              <figcaption>
-                <h3><% picture.title %></h3>
-                
-                <span><% picture.caption %></span>
+            <% if picture.hot == true %>
+              <img src="http://i.imgur.com/A4HGpmd.png", class="hot_image">
+            <% else %>
+            <% end %>
 
-                <%= link_to "<button>View</button>".html_safe, picture %>
-                              
-                <% if picture.hot == true %>
-                  <img src="http://i.imgur.com/A4HGpmd.png", class="hot_image">
-                <% else %>
-                <% end %>
-              </figcaption>
-            </figure>
+            <p id="grid_title"><%= picture.title %></p>
+
+            <%= image_tag picture.url, class:"grid_image" %>
+              
+            <span><%= picture.caption %></span>
+
+            <%= link_to "<button>View</button>".html_safe, picture %>
+                            
           </li>
 
   <% end %>
