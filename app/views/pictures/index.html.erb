@@ -1,7 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Pictures</h1>
+<img src="http://i.imgur.com/6Yj3pJ0.png"/>
+<h3>LilyPix Index</h3>
 
+<%= link_to "<button>Upload</button>".html_safe, new_picture_path %>
 <table>
   <thead>
     <tr>
@@ -22,10 +24,10 @@
         <td>​<%= image_tag picture.url %></td>
         <td><%= picture.vote %></td>
         <td><%= picture.hot %></td>
-        <td><%= link_to 'Comment', new_picture_comment_path(picture_id: picture.id) %></td>
-        <td><%= link_to 'Show', picture %></td>
-        <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
-        <td><%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <!-- <td><%= link_to 'Comment', new_picture_comment_path(picture_id: picture.id) %></td> -->
+        <td><%= link_to "<button>View</button>".html_safe, picture %></td>
+        <!-- <td><%= link_to 'Edit', edit_picture_path(picture) %></td> -->
+        <!-- <td><%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
       </tr>
     <% end %>
   </tbody>
@@ -33,4 +35,5 @@
 
 <br>
 
-<%= link_to 'New Picture', new_picture_path %>
+
+<img src="http://i.imgur.com/dPWrScQ.png"/>
