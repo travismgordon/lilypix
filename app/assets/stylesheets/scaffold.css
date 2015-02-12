@@ -1,25 +1,6 @@
-
-/*body { background-color: #00A99D;
-
-/*body { background-color:;
-
-  text-shadow: 2px;
+body {
+  /*  background: rgba(26, 188, 156,1.0);*/
+  background: rgba(40,40,40,1);
+  font-family: Helvetica, Verdana, sans-serif;
+  color: rgba(250,250,250,0.85);
 }
-
-h1 {
-  width: 300px;
-  font-size: 250%;
-  border-style: solid;
-  border-color: black;
-  box-shadow: 12px 11px 10px;
-  margin: 20px auto;
-}
-
-.field {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 15px;
-  margin-top: 5px;
-}
-*/
-
