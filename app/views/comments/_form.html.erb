@@ -20,8 +20,8 @@
     <%= f.text_field :words %>
   </div>
   <div class="comment_vote">
-    <%= f.label :vote %><br>
-    <%= f.number_field :vote %>
+  <!--   <%= f.label :vote %><br> -->
+    <%= f.hidden_field :vote, value: @vote %>
   </div>
   <div class="what">
     <%= f.hidden_field :picture_id %>
