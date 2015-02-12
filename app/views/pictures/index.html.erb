@@ -1,9 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<img src="http://i.imgur.com/6Yj3pJ0.png"/>
+
+<%= image_tag "logo.png" %>
+<!-- <img src="http://i.imgur.com/6Yj3pJ0.png"/> -->
 <h3>LilyPix Index</h3>
 
 <%= link_to "<button>Upload</button>".html_safe, new_picture_path %>
+
+<!-- <%= link_to "<button>Upload</button>".html_safe, new_picture_path, class:"upload_button" %> -->
+
 <table>
   <thead>
     <tr>
@@ -35,5 +40,5 @@
 
 <br>
 
-
-<img src="http://i.imgur.com/dPWrScQ.png"/>
+<%= image_tag "sobe.png" %>
+<!-- <img src="http://i.imgur.com/dPWrScQ.png"/> -->
