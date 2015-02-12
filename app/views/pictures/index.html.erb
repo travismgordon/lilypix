@@ -1,11 +1,10 @@
 <p id="notice"><%= notice %></p>
 <div class="pix">
-<!-- <h1>Listing Pictures</h1> -->
+
 </div>
 
-
 <%= image_tag "logo.png", class:"lily_logo" %>
-<!-- <img src="http://i.imgur.com/6Yj3pJ0.png"/> -->
+
 <h3>LilyPix Index</h3>
 
 <%= link_to "<button>Upload</button>".html_safe, new_picture_path %>
@@ -20,7 +19,7 @@
             <% else %>
             <% end %>
 
-            <p id="grid_title"><%= picture.title %></p>
+            <p class="grid_title"><%= picture.title %></p>
 
             <%= image_tag picture.url, class:"grid_image" %>
               
@@ -36,5 +35,5 @@
 
 <br>
 
-<%= image_tag "sobe.png", class:"center" %>
-<!-- <img src="http://i.imgur.com/dPWrScQ.png"/> -->
+<%= image_tag "sobe.png", class:"sobe_logo" %>
+<footer>© 2015</footer>
