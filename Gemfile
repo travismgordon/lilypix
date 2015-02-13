@@ -7,9 +7,9 @@ end
 
 group :production do
 	gem 'pg'
+  gem 'rails_12factor'
 end
 
-gem 'rails_12factor'
 
 # added styling gems for heroku *********************
 gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
