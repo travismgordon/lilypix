@@ -1,8 +1,10 @@
+<%= image_tag "logo.png", class:"lily_logo" %>
+
 <h1>New Picture</h1>
 <div class="upload">
 <p>Upload a New Pic</p>
 </div>
 <%= render 'form' %>
 <div class="back_button">
-<%= link_to 'Back', pictures_path %>
+<%= link_to "<button>Back</button>".html_safe, pictures_path %>
 </div>
