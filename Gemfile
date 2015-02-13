@@ -11,6 +11,13 @@ end
 
 gem 'rails_12factor'
 
+# added styling gems for heroku *********************
+# gem 'rails_log_stdout'
+# gem 'rails3_serve_static_assets'
+
+
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
