@@ -48,6 +48,7 @@
         <td><%= comment.name %>:</td>
         <td><%= comment.words %></td>
         <br>
+        about: <%= time_ago_in_words(comment.created_at) %>
         <br>
         <td><%= comment.vote %></td>
         <!-- <td><%= comment.picture %></td> -->

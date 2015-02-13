@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20150211211233) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "comments", force: :cascade do |t|
     t.string   "name"
     t.string   "words"
@@ -22,7 +25,7 @@ ActiveRecord::Schema.define(version: 20150211211233) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "comments", ["picture_id"], name: "index_comments_on_picture_id"
+  add_index "comments", ["picture_id"], name: "index_comments_on_picture_id", using: :btree
 
   create_table "picture_votes", force: :cascade do |t|
     t.integer  "direction"
@@ -32,7 +35,7 @@ ActiveRecord::Schema.define(version: 20150211211233) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "picture_votes", ["picture_id"], name: "index_picture_votes_on_picture_id"
+  add_index "picture_votes", ["picture_id"], name: "index_picture_votes_on_picture_id", using: :btree
 
   create_table "pictures", force: :cascade do |t|
     t.string   "title"
@@ -44,4 +47,6 @@ ActiveRecord::Schema.define(version: 20150211211233) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "comments", "pictures"
+  add_foreign_key "picture_votes", "pictures"
 end
