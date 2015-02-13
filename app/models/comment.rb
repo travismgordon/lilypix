@@ -13,4 +13,6 @@
 
 class Comment < ActiveRecord::Base
   belongs_to :picture
+  validates_presence_of :name, message: "....uhhh, what was your name again?!"
+  validates_presence_of :words, message: "are missing!"
 end

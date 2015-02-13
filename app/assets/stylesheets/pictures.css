@@ -190,7 +190,13 @@ h1 {
   text-align: center;
 }
 
-.fire
-_pic {
+.fire_pic {
   text-align: center;
+}
+
+.small_logo{
+    width: 225px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
