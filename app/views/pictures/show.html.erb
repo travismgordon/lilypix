@@ -1,3 +1,5 @@
+<%= image_tag "logo.png", class:"small_logo" %>
+
 <p id="notice"><%= notice %></p>
 
 <p class="title_text">
@@ -28,13 +30,14 @@
 
 </p>
 <div class="upvote">
-<%= link_to "<button>Upvote</button>".html_safe, picture_upvote_path(@picture), method: :post %>
-<%= link_to "<button>Downvote</button>".html_safe, picture_downvote_path(@picture), method: :post %>
+<%= link_to "<button>U-Vote</button>".html_safe, picture_upvote_path(@picture), method: :post %>
+<%= link_to "<button>D-Vote</button>".html_safe, picture_downvote_path(@picture), method: :post %>
 </div> 
 <!-- <%= link_to "<button>New Comment</button>".html_safe, new_picture_comment_path(@picture) %> -->
 <!-- <%= link_to 'Edit', edit_picture_path(@picture) %> -->
+<br>
 <div class="back_to_front">
-<%= link_to "<button>Back to Frontpage</button>".html_safe, pictures_path %>
+<%= link_to "<button>Frontpage</button>".html_safe, pictures_path %>
 <%= link_to "<button>Delete</button>".html_safe, @picture, method: :delete, data: { confirm: 'Are you sure?' } %>
 
 <h3>Comments</h3>
@@ -58,5 +61,5 @@
 <br>
 
 
-<h3>New Comment</h3>
+<h3>Create a Comment</h3>
 <%= render 'comments/form' %>
