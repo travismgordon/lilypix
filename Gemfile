@@ -12,8 +12,8 @@ end
 gem 'rails_12factor'
 
 # added styling gems for heroku *********************
-# gem 'rails_log_stdout'
-# gem 'rails3_serve_static_assets'
+gem 'rails_log_stdout'
+gem 'rails3_serve_static_assets'
 
 
 
