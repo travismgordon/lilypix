@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  root 'pictures#​index​'
-  
+  root 'pictures#index'
+
   resources :picture_votes
 
   resources :comments
@@ -11,7 +11,6 @@ Rails.application.routes.draw do
     post :upvote
     post :downvote
   end
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
