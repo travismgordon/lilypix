@@ -190,7 +190,20 @@ h1 {
   text-align: center;
 }
 
-.fire
-_pic {
+.fire_pic {
   text-align: center;
+}
+
+.title_text {
+  font-size: 20px;
+  padding-bottom: 8px;
+}
+
+.center_text {
+  font-size: 20px;
+}
+
+body {
+  font-size: 10px;
+  text-shadow: 4px 4px 4px 4px #383838;
 }
